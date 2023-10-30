@@ -11,24 +11,24 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
 
-/*1. **Stringa**: Una stringa è come una catena di lettere, parole o frasi. Ad esempio, "ciao" è una stringa.
+let str = "stringa" // Stringa: Una stringa è come una catena di lettere, parole o frasi. Ad esempio, "ciao" è una stringa.
 
-2. **Numero**: Un numero rappresenta un valore numerico. Può essere un numero intero come 5 o un numero con decimali come 3.14.
+let num = 26 // Numero: Un numero rappresenta un valore numerico. Può essere un numero intero come 5 o un numero con decimali come 3.14.
 
-3. **Booleano**: Un booleano può essere vero (true) o falso (false). È come rispondere a una domanda con "sì" o "no".
+let bol = true // Booleano: Un booleano può essere vero (true) o falso (false). È come rispondere a una domanda con "sì" o "no".
 
-4. **Array**: Un array è come una scatola che può contenere più oggetti. Puoi mettere diversi oggetti all'interno di un array, come una scatola di mattoncini LEGO.
+let arr = [1, 2, 3];  //Array: Un array è come una scatola che può contenere più oggetti. Puoi mettere diversi oggetti all'interno di un array, come una scatola di mattoncini LEGO.
 
-5. **Oggetto**: Un oggetto è come un contenitore che può avere molte cose al suo interno. Ogni cosa all'interno dell'oggetto ha un nome, come gli oggetti in una stanza hanno nomi come "libro" o "giocattolo".
+obj = { nome: "Giocattolo", colore: "Rosso" };//Oggetto: Un oggetto è come un contenitore che può avere molte cose al suo interno. Ogni cosa all'interno dell'oggetto ha un nome, come gli oggetti in una stanza hanno nomi come "libro" o "giocattolo".
 
-6. **Null**: Null significa che non c'è nulla. È come avere una scatola vuota anziché una scatola con qualcosa dentro.
+let nullo = null;//Null: Null significa che non c'è nulla. È come avere una scatola vuota anziché una scatola con qualcosa dentro.
 
-7. **Non definito (Undefined)**: Quando qualcosa è non definito, significa che non ha un valore ancora. È come quando chiedi "Qual è il tuo colore preferito?" e la persona non ha ancora deciso.
+let nonDefinito;//Non definito (Undefined): Quando qualcosa è non definito, significa che non ha un valore ancora. È come quando chiedi "Qual è il tuo colore preferito?" e la persona non ha ancora deciso.
 
-8. **Simbolo (Symbol)**: Un simbolo è un tipo di dato unico e immutabile usato come chiave per le proprietà degli oggetti. È come avere un sigillo segreto che può aprire solo una certa porta.
+let simbolo = Symbol("descrizione");//Simbolo (Symbol): Un simbolo è un tipo di dato unico e immutabile usato come chiave per le proprietà degli oggetti. È come avere un sigillo segreto che può aprire solo una certa porta.
 
-9. **Funzione (Function)**: Una funzione è un blocco di codice che fa qualcosa di specifico. È come una ricetta per cucinare: hai degli ingredienti (input), segui una serie di passaggi (codice della funzione) e alla fine ottieni un piatto delizioso (output).
-*/
+let funzione = function() { /* codice della funzione */ }; //Funzione (Function): Una funzione è un blocco di codice che fa qualcosa di specifico. È come una ricetta per cucinare: hai degli ingredienti (input), segui una serie di passaggi (codice della funzione) e alla fine ottieni un piatto delizioso (output).
+
 
 
 /* ESERCIZIO 2
@@ -43,16 +43,14 @@ console.log(name);
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
-let a = 12;
-let b = 20;
-let sum = a + b;
+let sum = 12 + 20;
 console.log(sum);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
-var x = 12;
+let x = 12;
 console.log(x);
 
 /* ESERCIZIO 5
