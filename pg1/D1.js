@@ -11,7 +11,7 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se volessi farli comprendere a un bambino.
 */
 
-1. **Stringa**: Una stringa è come una catena di lettere, parole o frasi. Ad esempio, "ciao" è una stringa.
+/*1. **Stringa**: Una stringa è come una catena di lettere, parole o frasi. Ad esempio, "ciao" è una stringa.
 
 2. **Numero**: Un numero rappresenta un valore numerico. Può essere un numero intero come 5 o un numero con decimali come 3.14.
 
@@ -28,6 +28,8 @@ REGOLE
 8. **Simbolo (Symbol)**: Un simbolo è un tipo di dato unico e immutabile usato come chiave per le proprietà degli oggetti. È come avere un sigillo segreto che può aprire solo una certa porta.
 
 9. **Funzione (Function)**: Una funzione è un blocco di codice che fa qualcosa di specifico. È come una ricetta per cucinare: hai degli ingredienti (input), segui una serie di passaggi (codice della funzione) e alla fine ottieni un piatto delizioso (output).
+*/
+
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
