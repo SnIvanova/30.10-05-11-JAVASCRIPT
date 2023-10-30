@@ -35,18 +35,23 @@ REGOLE
 
 let name = "Snizhana";
 
+console.log(name);
+
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
-
-let sum = 12 + 20;
+let a = 12;
+let b = 20;
+let sum = a + b;
+console.log(sum);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 var x = 12;
+console.log(x);
 
 /* ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
@@ -61,6 +66,7 @@ name = "Ivanova";
 */
 
 x = x - 4;
+console.log(x);
 
 /* ESERCIZIO 7
  Crea due variabili: "name1" e "name2". Assegna a name1 la stringa "john", e assegna a name2 la stringa "John" (con la J maiuscola!).
