@@ -89,26 +89,6 @@ if (val > val2 && val > val3) {
   console.log(val3, val2, val);
 }
 
-if (val > val2 && val > val3) {
-  if (val2 >= val3) {
-      console.log(val, val2, val3); 
-  } else {
-      console.log(val, val3, val2); 
-  }
-} else if (val2 >= val && val2 >= val3) {
-  if (val >= val3) {
-      console.log(val2, val, val3); 
-  } else {
-      console.log(val2, val3, val); 
-  }
-} else {
-  if (val >= val2) {
-      console.log(val3, val, val2); 
-  } else {
-      console.log(val3, val2, val);
-  }
-}
-
 /* ESERCIZIO 8
   Crea un algoritmo per verificare che un valore fornito sia un numero oppure no (suggerimento: cerca su un motore di ricerca "typeof").
 */
