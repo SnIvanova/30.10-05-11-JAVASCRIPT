@@ -74,9 +74,9 @@ console.log(x);
  EXTRA: verifica che la loro uguaglianza diventi true se entrambe vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
-var name1 = "john";
+let name1 = "john";
 
-var name2 = "John";
+let name2 = "John";
 
 console.log(name1 === name2);
 
