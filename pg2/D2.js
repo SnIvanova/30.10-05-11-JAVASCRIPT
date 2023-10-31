@@ -6,11 +6,9 @@ let x = 10;
 let y = 20;
 
 if (x > y) {
-  console.log(x + " bigger then" + y);
-} else if{
-  console.log(y + " bigger then" + x);
-} else {
-  console.log("equal");
+  console.log(x + " più grande di " + y);
+} else {  
+  console.log(y + " più grande di " + x);
 }
 
 
