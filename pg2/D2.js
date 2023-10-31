@@ -6,10 +6,13 @@ let x = 10;
 let y = 20;
 
 if (x > y) {
-  console.log(x);
+  console.log(x + " bigger then" + y);
+} else if{
+  console.log(y + " bigger then" + x);
 } else {
-  console.log(y);
+  console.log("equal");
 }
+
 
 /* ESERCIZIO 2
   Scrivi un algoritmo che mostri "not equal" in console se un numero intero fornito è diverso da 5.
@@ -34,7 +37,7 @@ if (n1 % 5 === 0) {
 let n2 = 8;
 let n3 = 6;
 
-if (n2 === 8 || n3 === 8 ||n2 + n3 === 8 || n2 - n3 === 8 || n2 - n3 === 8) {
+if (n2 === 8 || n3 === 8 ||(n2 + n3) === 8 || (n2 - n3) === 8 || (n3 - n2) === 8) {
   console.log("equal");
 } else {
   console.log("not equal");
