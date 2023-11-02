@@ -242,4 +242,4 @@ console.log(characters);
 
 let randomNumber = Math.floor(Math.random() * starWarsCharacters.length);
 
-console.log(starWarsCharacters[randomNumber]);
+console.log("hi, Ì'm " +starWarsCharacters[randomNumber].name + " .I'm  " +starWarsCharacters[randomNumber].gender + " and I have " + starWarsCharacters[randomNumber].eye_color + "eyes");
