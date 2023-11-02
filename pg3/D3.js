@@ -164,10 +164,10 @@ for (let i = 0; i < starWarsCharacters.length; i++)
     case "red":
       eyeColor.red.push(starWarsCharacters[i]);
       break;
-      case "blue-gray":
+    case "blue-gray":
         eyeColor.blueGray.push(starWarsCharacters[i]);
         break;
-    default:
+    default: 'n/a';
     break;
   }
 } 
@@ -179,10 +179,11 @@ console.log(eyeColor);
 
 let crewMass = 0;
 
-for (let i = 0; i < starWarsCharacters.length; i++) {
-  crewMass += starWarsCharacters[i].mass;
-}
+let i = 0;
 
+while (i < starWarsCharacters.length) {
+  crewMass += starWarsCharacters[i].mass; i++;
+}
 console.log(crewMass);
 
 /* ESERCIZIO 7
