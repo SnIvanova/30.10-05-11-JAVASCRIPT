@@ -161,9 +161,12 @@ for (let i = 0; i < starWarsCharacters.length; i++)
     case "brown":
       eyeColor.brown.push(starWarsCharacters[i]);
       break;
-    case "rad":
-      eyeColor.rad.push(starWarsCharacters[i]);
+    case "red":
+      eyeColor.red.push(starWarsCharacters[i]);
       break;
+      case "blue-gray":
+        eyeColor.blueGray.push(starWarsCharacters[i]);
+        break;
     default:
     break;
   }
