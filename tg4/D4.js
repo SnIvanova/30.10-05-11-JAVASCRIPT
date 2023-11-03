@@ -49,3 +49,24 @@ let funk2 = function () {
     }
 }
 funk2 ();
+
+/* --EXTRA-- ESERCIZIO 11
+  Crea una funzione che riceve come parametri una stringa e restituisca una nuova stringa con tutte le lettere maiuscole.
+*/
+
+function toUpperCase(str) {
+    return str.toUpperCase();
+}
+
+console.log(toUpperCase("hello"));
+
+/*arrow function*/
+
+let arrfunc = () => console.log(toUpperCase);
+
+/* metodo string */
+
+let strings = "hello world";
+
+console.log(strings.indexOf( "world"));
+
