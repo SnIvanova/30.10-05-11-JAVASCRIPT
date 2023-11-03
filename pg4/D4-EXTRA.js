@@ -166,12 +166,14 @@ console.log(isNotSpam('Hello, this is a legitimate email.'));
 */
 
 function daysPassed(date) {
-    let date1 = new Date(date);
-    let date2 = new Date();
-    return Math.floor((date2 - date1) / (1000 * 60 * 60 * 24));
+    let now = new Date();
+    let passedTime = now - date;
+    let passedDays = Math.floor(passedTime / (1000 * 60 * 60 * 24));
+    return passedDays;
 }
 
-console.log(daysPassed('2023-11-03'));
+console.log(daysPassed(new Date(2018, 0, 1)));  
+
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
@@ -181,4 +183,18 @@ console.log(daysPassed('2023-11-03'));
  "10","11","12"]
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function matrixGenerator(x, y) {
+    let matrix = [];
+    for (let i = 0; i < x; i++) {
+        let row = [];
+        for (let j = 0; j < y; j++) {
+            row.push(i.toString() + j.toString());
+        }
+        matrix.push(row);
+    }
+    return matrix;
+}
+
+console.log(matrixGenerator(3, 2));  
+
+
