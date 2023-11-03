@@ -80,33 +80,86 @@ console.log(maxShoppingCart(shoppingCart));
  Crea una funzione chiamata "latestShoppingCart" che riceve l'array "shoppingCart" e ritorna l'ultimo elemento.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function latestShoppingCart(array) {
+    return array[array.length - 1];
+}
+
+console.log(latestShoppingCart(shoppingCart));
 
 /* EXTRA 6
  Crea una funzione chiamata "loopUntil" che riceve un numero intero come parametro con valore tra 0 e 9.
  La funzione è composta da un ciclo che stampa un numero casuale tra 0 e 9 finchè il numero casuale non è maggiore di x per tre volte di fila.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function loopUntil(x) {
+    let count = 0;
+    while (count < 3) {
+        let randomNum = Math.floor(Math.random() * 10);
+        console.log(randomNum);
+        if (randomNum > x) {
+            count++;
+        } else {
+            count = 0;
+        }
+    }
+}
+
+loopUntil(2);
 
 /* EXTRA 7
 Crea una funzione chiamata "average" che riceve un array come parametro e ne ritorna la media aritmetica. La funzione salta automaticamente i valori non numerici nell'array.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function average(array) {
+    let sum = 0;
+    let count = 0;
+    for (let i = 0; i < array.length; i++) {
+        if (typeof array[i] === 'number') {
+            sum += array[i];
+            count++;
+        }
+    }
+    return sum / count;
+}
+
+console.log(average([1, 2, 'a', 3, 'b', 4, 5]));
+
+
 
 /* EXTRA 8
  Crea una funzione chiamata "longest" che trova la stringa più lunga all'interno di un array di stringhe fornito come parametro.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function longest(array) {
+    let longest = "";
+    for (let i = 0; i < array.length; i++) {
+        if (array[i].length > longest.length) {
+            longest = array[i];
+        }
+    }
+    return longest;
+}
+console.log(longest(['short', 'medium', 'longest', 'long']));
+
+
 
 /* EXTRA 9
  Crea una funzione per creare un filtro anti-spam per la tua casella email. La funzione riceve un parametro stringa chiamato "emailContent", e torna un valore booleano.
  La funzione deve ritornare true se "emailContent" non contiene le parole "SPAM" o "SCAM".
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function isNotSpam(emailContent) {
+    let lowerCaseEmail = emailContent.toLowerCase();
+    if (lowerCaseEmail.includes('spam') || lowerCaseEmail.includes('scam')) {
+        return false;
+    } else {
+        return true;
+    }
+}
+
+console.log(isNotSpam('Hello, this is a SPAM email.'));
+console.log(isNotSpam('Hello, this is a legitimate email.')); 
+
 
 /* EXTRA 10
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
