@@ -165,7 +165,13 @@ console.log(isNotSpam('Hello, this is a legitimate email.'));
  Scrivi una funzione che riceve una data come parametro, e calcola il numero di giorni passati da quella data.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+function daysPassed(date) {
+    let date1 = new Date(date);
+    let date2 = new Date();
+    return Math.floor((date2 - date1) / (1000 * 60 * 60 * 24));
+}
+
+console.log(daysPassed('2023-11-03'));
 
 /* EXTRA 11
  Scrivi una funzione chiamata "matrixGenerator" che riceve come parametri due numeri interi, "x" e "y".
